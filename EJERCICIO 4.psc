@@ -1,6 +1,6 @@
 Algoritmo precio_kilo_banano
 	Definir kiloBanano, precioInicial, precioFinal, pagoTotal como Real
-	Definir tamaño como entero
+	Definir tamaÃ±o como entero
 	Definir tipo, sn Como Cadena
 Repetir
 	Escribir "Ingrese el precio inicial del kilo de banano"
@@ -10,37 +10,37 @@ Repetir
 	Escribir "Ingrese el Tipo de Banano (A o B)"
 	Leer tipo
 	tipo = Mayusculas(tipo)
-	Escribir "Ingrese el tamaño de Banano (1 o 2)"
-	Leer tamaño
+	Escribir "Ingrese el tamaÃ±o de Banano (1 o 2)"
+	Leer tamaÃ±o
 	Si tipo = "A" Entonces
-        Si tamaño = 1 Entonces
+        Si tamaÃ±o = 1 Entonces
             precioFinal = precioInicial + 2
-            Escribir "Ajuste: Tipo A, Tamaño 1 (+ $2)"
+            Escribir "Ajuste: Tipo A, TamaÃ±o 1 (+ $2)"
         SiNo
-            Si tamaño = 2 Entonces
+            Si tamaÃ±o = 2 Entonces
                 precioFinal = precioInicial + 3
-                Escribir "Ajuste: Tipo A, Tamaño 2 (+ $3)"
+                Escribir "Ajuste: Tipo A, TamaÃ±o 2 (+ $3)"
             SiNo
-                Escribir "Error: Tamaño no válido para Tipo A"
+                Escribir "Error: TamaÃ±o no vÃ¡lido para Tipo A"
                 precioFinal = 0
             FinSi
         FinSi
     SiNo
         Si tipo = "B" Entonces
-            Si tamaño = 1 Entonces
+            Si tamaÃ±o = 1 Entonces
                 precioFinal = precioInicial - 3
-                Escribir "Ajuste: Tipo B, Tamaño 1 (- $3)"
+                Escribir "Ajuste: Tipo B, TamaÃ±o 1 (- $3)"
             SiNo
-                Si tamaño = 2 Entonces
+                Si tamaÃ±o = 2 Entonces
                     precioFinal = precioInicial - 5
-                    Escribir "Ajuste: Tipo B, Tamaño 2 (- $5)"
+                    Escribir "Ajuste: Tipo B, TamaÃ±o 2 (- $5)"
                 SiNo
-                    Escribir "Error: Tamaño no válido para Tipo B"
+                    Escribir "Error: TamaÃ±o no vÃ¡lido para Tipo B"
                     precioFinal = 0
                 FinSi
             FinSi
         SiNo
-            Escribir "Error: El tipo ingresado no es válido (Use A o B)."
+            Escribir "Error: El tipo ingresado no es vÃ¡lido (Use A o B)."
             precioFinal = 0
         FinSi
     FinSi
@@ -58,5 +58,6 @@ Repetir
 	Escribir "Si desea comprobar otros datos dijite S, N para salir"
 	Leer sn
 	sn = Mayusculas(sn)
-Hasta Que (sn = "N")
+Hasta Que (sn <> "S")
 FinAlgoritmo
+
