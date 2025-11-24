@@ -3,7 +3,7 @@ Algoritmo presupuesto_de_Banquete
 	Definir iva, presupuesto, valorTotal Como Real
 	Definir sn Como Cadena
 	Repetir
-		Escribir 'Ingrese el número de personas'
+		Escribir 'Ingrese el nÃºmero de personas'
 		Leer n
 		Si n > 200 Entonces
 			c1 <- 10
@@ -33,5 +33,6 @@ Algoritmo presupuesto_de_Banquete
 		Escribir 'Si desea comprobar otros datos dijite S, N para salir'
 		Leer sn
 		sn <- Mayusculas(sn)
-	Hasta Que (sn='N')
+	Hasta Que (sn <> "S")
 FinAlgoritmo
+
