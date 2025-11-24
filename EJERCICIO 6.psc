@@ -11,7 +11,7 @@ Repetir
 		Leer letra
 		l <- Longitud(letra)
 		Si l <> 1 Entonces
-			Escribir "ERROR: Debe ingresar UN solo carácter. Intente de nuevo."
+			Escribir "ERROR: Debe ingresar UN solo carÃ¡cter. Intente de nuevo."
 		FinSi
 	Hasta Que l = 1
 	letra = Mayusculas(letra)
@@ -24,9 +24,10 @@ Repetir
 	FinPara
 	Escribir "-----------------------------------"
 	Escribir "La frase es: ", frase
-	Escribir "El número de veces repetido es: ", num
+	Escribir "El nÃºmero de veces repetido es: ", num
 	Escribir "-----------------------------------"
 	Escribir 'Si desea comprobar otra letra en la misma frase dijite S, N para salir'
 	sn <- Mayusculas(sn)
-Hasta Que (sn ='N')
+Hasta Que (sn <> "S")
 FinAlgoritmo
+
