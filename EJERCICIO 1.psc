@@ -5,16 +5,17 @@ Algoritmo NOTA_APROBADO_O_REPROBADO
 		Escribir 'Ingrese su nota de examen'
 		Leer nota
 		Si nota>100 Entonces
-			Escribir 'Nota inv·lida'
+			Escribir 'Nota inv√°lida'
 		SiNo
 			Si nota<60 Entonces
-				Escribir 'Est· Reprobado'
+				Escribir 'Est√° Reprobado'
 			SiNo
-				Escribir 'Est· Aprobado'
+				Escribir 'Est√° Aprobado'
 			FinSi
 		FinSi
 		Escribir 'Si desea volver a comprobar otra nota dijite S, N para salir' Sin Saltar
 		Leer sn
 		sn = Mayusculas(sn)
-	Hasta Que (sn = "N")
+	Hasta Que (sn <> "S")
 FinAlgoritmo
+
