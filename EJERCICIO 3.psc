@@ -2,7 +2,7 @@ Algoritmo Sueldo_Anual
 	Definir sueldoMensual, sueldoAnual, z, sueldoNeto, impuesto Como Real
 	Definir sn Como Cadena
 	Repetir 
-		Escribir "Ingrese su sueldo mensual (Numéricamente)"
+		Escribir "Ingrese su sueldo mensual (NumÃ©ricamente)"
 		Leer sueldoMensual
 		sueldoAnual <- sueldoMensual * 12
 		impuesto <- 0
@@ -10,8 +10,8 @@ Algoritmo Sueldo_Anual
 		Si sueldoAnual > 30000 Entonces
 			z <- (sueldoAnual - 30000) 
 			impuesto <- z * 0.15
-			Escribir "El sueldo supera el límite de $30,000."
-			Escribir "Se aplicará un impuesto del 15% sobre el excedente de $", z 
+			Escribir "El sueldo supera el lÃ­mite de $30,000."
+			Escribir "Se aplicarÃ¡ un impuesto del 15% sobre el excedente de $", z 
 		Sino 
 			Escribir "El sueldo no supera los $30,000. No aplica impuesto."
 		FinSi	
@@ -25,5 +25,6 @@ Algoritmo Sueldo_Anual
 		Escribir "Si desea comprobar otro sueldo dijite S, N para salir"
 		Leer sn
 		sn = Mayusculas(sn)
-	Hasta Que (sn = "N")
+	Hasta Que (sn <> "S")
 FinAlgoritmo
+
